@@ -1,0 +1,30 @@
+.columnHover:hover  .scaleUp {
+
+    transform:scale(1.02);         
+ 
+  }
+
+  .Submita:hover  .change {
+
+    background-color:white!important;
+    color:darkorange!important;
+ 
+  }
+
+
+  .hoverText:hover  .orangeText {
+
+    
+    color:darkorange!important;
+ 
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    
+    .w-xs-100  {  
+      width: 100%!important;
+    }
+
+
+  }
