@@ -347,7 +347,7 @@ scrollTrigger: {
 
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardLeftMove", {
-x:-400,
+x:-1000,
 ease: "bounce",
 duration: 2.5,
 scrollTrigger: {
@@ -362,11 +362,11 @@ scrollTrigger: {
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardRightMove", {
 delay:2,
-x:400,
+x:1000,
 ease: "bounce",
 duration: 2.5,
 scrollTrigger: {
-  trigger: ".df",
+  trigger: ".MobileCardRightMove",
   toggleActions: "play none none reset"
 }
 });
