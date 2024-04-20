@@ -16,65 +16,7 @@
 
 <body class="font-mono vw-100 vh-100" >
 
-   <!-- desktop navbar starts here !-->
-
-
-   <div class="d-none d-lg-block  d-lg-flex flex-grow-1 justify-content-center "  style=" flex-basis:0; color:white;  background-color: rgb(5, 63, 5);">
-
-    
-    
-<ul class="d-flex px-3 mb-0 py-4 " style="font-size:20px; ">
-<li class="px-3 hoverText" style="list-style: none;"><a class="text-white" style="text-decoration: none; "
-        href="andreas.html.php#services">HOME</a></li>
-<li class="px-3 hoverText" style="list-style: none;"><a class="text-white" style="text-decoration: none; "
-        href="news.html.php">NEWS </a></li>
-<li class="px-3 hoverText" style="list-style: none;"><a class="text-white" style="text-decoration: none; "
-        href="andreas.html.php#email">TEAMS  </a></li>
-
-
-</ul>
-
-
-</div>
-
-<!-- desktop navbar ends here !-->
-
-
-<!-- mobile navbar starts here !-->
-<div class=" d-block d-lg-none d-flex px-3 mb-0 py-4 align-items-center justify-content-between" style="background-color: rgb(5, 63, 5); color:#fff; border-bottom: 4px solid; border-color:white;">
-
-<div class="hoverText ">   <span>
-</span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3Ory_HwxQDKhkUfMyoyjhM-ylzVICB_Ysw-Ni2_UxL-20JTi0BPzNzt4jxeUZzIgj0w&usqp=CAU" style="height:50px; width:50px;"> </div>
-<div class="hoverText " >  <h4 class="mb-0 "> <span><i class="fa fa-phone border-4" style=" color:darkorange;"></i>
- 
-</span> </h4> </div>
-
-
-<div  class="show ">
- <div style="width:35px; background-color: #fff; height:2px;"> </div>
- <div class="mt-2" style="width:35px; background-color: #fff; height:2px;"> </div>
- <div class="mt-2" style="width:35px; background-color: #fff; height:2px;"> </div>
- 
- <div class="position-absolute end-0 hide" style="display: none; top:7%; background-color: rgb(30, 30, 30); width:100%; height:fit-content; z-index:2; border-top: 2px solid;  border-bottom: 2px solid; border-color:darkorange;">
-<ul class="d-flex py-3 mb-0 flex-column align-items-end " style="font-size:25px ">
-     <li class="px-3 hoverText" style="list-style: none;"><a class=" orangeTextNoHover" style="text-decoration:none;"
-             href="andreas.html.php#services">SERVICES</a></li>
-     <li class="px-3 hoverText" style="list-style: none;"><a class=" orangeTextNoHover" style="text-decoration:none; "
-             href="andreas.html.php#results">RESULTS </a></li>
-     <li class="px-3 hoverText" style="list-style: none;"><a class="orangeTextNoHover" style="text-decoration:none; "
-             href="andreas.html.php#email">EMAIL ME </a></li>
-    
-
- </ul>
-
-</div>
-</div>
-
-
-</div>
-
- <!-- mobile navbar ends here !-->
-
+<?php  require 'nav.html.php'; ?>
        
    
 
@@ -85,8 +27,8 @@
         
     <img src="https://spencercommunitytrust.co.uk/wp-content/uploads/2020/11/tempImageP0Sl80-scaled.jpg" style="z-index:1; color:black; width:100%;"> 
     </img>
-<div class="position-absolute d-none d-lg-block d-block top-50 start-50 translate-middle" style="z-index:2; color:white;  ">
-     <h1 > WELCOME TO BORUSSIA TEETH FC </h1>
+<div class="position-absolute d-none d-lg-block d-block top-50 start-50 translate-middle welcomeBounce" style="z-index:2; color:white;  ">
+     <h1 class="welcomeBounce"> WELCOME TO BORUSSIA TEETH FC </h1>
     </div>
 
 
@@ -101,7 +43,7 @@
 
     <div class="d-flex  px-5 py-4 justify-content-center" style=" border-bottom: solid 4px rgb(5, 63, 5); ">
     
-        <div class="mobileHeader" style="max-width: 600px;">
+        <div class="desktopIntroAppear" style="max-width: 600px;">
         
 
         <h1 class="d-block d-lg-none"> WELCOME TO BORUSSIA TEETH FC   </h1>
@@ -132,13 +74,13 @@
     <div class="row ">
    
     <div style="" class=" col-12 col-md-6 p-3 text-center columnHover ">
-    <div style="" class=" scaleUp ">
+    <div style="" class=" scaleUp falicitiesDesktopAppear">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3VpD9gM6kJW1b--ORJ3DXxHayt_4hx2UgHmGv6Dbvbm9NkXMxuQyrMxGcnHJFIxMg17UKtY6t2y-6bz4emdFf_eJHpM2KvTHCnEHxfi_aUKGte_McO3gpj8EGlLr2GK9Ri9sEFkI_lDQPJp23KzHgwZE3YKrDRpLh7zabxTuHLWfB5EZP-P4O3Pox/s4080/Milton%205.jpg"
 style="max-width:100%; max-height:600px;" class=""> </img>
 </div>
 </div>
 
-<div style="" class="col-12 col-md-6  p-md-5 text-center ">
+<div style="" class="col-12 col-md-6  p-md-5 text-center falicitiesDesktopAppear">
 <div style="">
 <p>Lorem Ipsum is simply dummy d text of the printing and typesetting industry.
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
@@ -188,7 +130,7 @@ style="max-width:100%; max-height:600px;" class=""> </img>
 
 
  <!--  examaple column for falicaties section  starts here!-->
- <div class="col-12 col-md-6 bg-primary p-3 text-center columnHover MobileCardRightMove">
+ <div class="col-12 col-md-6 p-3 text-center columnHover MobileCardRightMove">
 <div class="bg-white d-flex flex-column align-items-center scaleUp h-100"> <!-- gutter for column  starts here!-->
 
 
@@ -256,7 +198,7 @@ style="max-width:100%; max-height:600px;" class=""> </img>
                   <!-- left side of the contact form section starts here !-->
                   <h1 class="text-center" style=" font-size: 37px;"> CONTACT <span class="">  ME </span></h1>
                 
-                  <h3 class="d-none d-lg-block " style=" ">For more information about Boursia teeth</h3>
+                  <h3 class="d-none d-lg-block " style=" ">For more information about Borussia teeth</h3>
                   <p class="d-block  d-lg-none mt-2" style="font-size:18px; "> For more information about Boursia teeth</p>
                 
                 </div>
@@ -264,7 +206,7 @@ style="max-width:100%; max-height:600px;" class=""> </img>
                 
                 <!-- right section of contact form starts here !-->
                 <div class="  px-4  w-75 w-xs-100   mt-md-2 " >
-                  <form action="andreas.html.php" method="POST"  >
+                  <form action="mx.html.php" method="POST"  >
                
                 
                 <div class=" d-flex flex-column flex-md-row justify-content-start gap-3 gap-md-5 mt-3 mt-md-3" >
@@ -362,37 +304,48 @@ style="max-width:100%; max-height:600px;" class=""> </img>
 <script>
 
 gsap.registerPlugin(ScrollTrigger)
-      
 
-gsap.from(".title", {
 
+gsap.from(".desktopIntroAppear", {
 
 opacity:0,
-duration: 1.5,
+duration: 4,
 scrollTrigger: {
-  trigger: ".title",
+  trigger: ".desktopIntroAppear",
+  toggleActions: "play none none reset"
+}
+});
+
+
+gsap.from(".welcomeBounce", {
+y:-500,
+duration: 2,
+ease: "bounce",
+scrollTrigger: {
+  trigger: ".welcomeBounce",
   toggleActions: "play none none reset"
 }
 });
 
 
 
-if (window.matchMedia("(max-width: 800px)").matches) {
-gsap.from(".mobileHeader", {
 
+
+gsap.from(".falicitiesDesktopAppear", {
 
 opacity:0,
-duration: 3,
+duration: 4,
+stagger:1,
 scrollTrigger: {
-  trigger: ".mobileHeader",
+  trigger: ".falicitiesDesktopAppear",
   toggleActions: "play none none reset"
 }
 });
-}
+
+
 
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardLeftMove", {
-
 x:-1000,
 ease: "bounce",
 duration: 2.5,
@@ -407,7 +360,7 @@ scrollTrigger: {
 
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardRightMove", {
-
+delay:2,
 x:1000,
 ease: "bounce",
 duration: 2.5,
@@ -418,25 +371,6 @@ scrollTrigger: {
 });
 
 }
-
-
-
-
-      gsap.from(".card", {
-
-      x:-100,
-      ease: "bounce",
-      opacity:1,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: ".card",
-        toggleActions: "play none none reset"
-      }
-    });
-
-
-
-
 
 </script>
   
