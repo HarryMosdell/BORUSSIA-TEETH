@@ -41,7 +41,7 @@ scrollTrigger: {
 
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardLeftMove", {
-x:-600,
+x:400,
 ease: "bounce",
 duration: 2.5,
 scrollTrigger: {
@@ -56,7 +56,7 @@ scrollTrigger: {
 if (window.matchMedia("(max-width: 800px)").matches) {
 gsap.from(".MobileCardRightMove", {
 
-x:600,
+x:-400,
 ease: "bounce",
 duration: 2.5,
 scrollTrigger: {
