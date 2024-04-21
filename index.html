@@ -88,14 +88,14 @@ style="max-width:100%; max-height:600px;" class="" loading="lazy"> </img>
          printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
          only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem .
+         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
          </p>
 </div>
 
 </div>
  <!--  examaple column for falicaties section  starts here!-->
-<div class="col-12 col-md-6  p-3 text-center columnHover MobileCardLeftMove " >
-<div class="bg-white d-flex  flex-column align-items-center scaleUp h-100 MobileCardLeftMove" style="  "> <!-- gutter for column  starts here!-->
+<div class="col-12 col-md-6  p-3 text-center columnHover moveLeftMpbile " style="" >
+<div class="bg-white d-flex  flex-column align-items-center scaleUp h-100 " style="  "> <!-- gutter for column  starts here!-->
 
 
 
@@ -131,8 +131,8 @@ style="max-width:100%; max-height:600px;" class="" loading="lazy"> </img>
 
 
  <!--  examaple column for falicaties section  starts here!-->
- <div class="col-12 col-md-6 p-3 text-center columnHover MobileCardRightMove">
-<div class="bg-white d-flex flex-column align-items-center scaleUp h-100 MobileCardRightMove"> <!-- gutter for column  starts here!-->
+ <div class="col-12 col-md-6 p-3 text-center columnHover moveRightMpbile">
+<div class="bg-white d-flex flex-column align-items-center scaleUp h-100 "> <!-- gutter for column  starts here!-->
 
 
 
@@ -296,12 +296,98 @@ style="max-width:100%; max-height:600px;" class="" loading="lazy"> </img>
             </footer>
            
         
-           
+      
             <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-<script src="index1.js"></script>
+<script>
+
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+gsap.from(".desktopIntroAppear", {
+
+opacity:0,
+duration: 4,
+scrollTrigger: {
+  trigger: ".desktopIntroAppear",
+  toggleActions: "play none none reset"
+}
+});
+
+
+gsap.from(".welcomeBounce", {
+y:-500,
+duration: 2,
+ease: "bounce",
+scrollTrigger: {
+  trigger: ".welcomeBounce",
+  toggleActions: "play none none reset"
+}
+});
+
+
+
+gsap.from(".falicitiesDesktopAppear", {
+
+opacity:0,
+duration: 4,
+stagger:1,
+scrollTrigger: {
+  trigger: ".falicitiesDesktopAppear",
+  toggleActions: "play none none reset"
+}
+});
+
+
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+
+    
+gsap.from(".moveLeftMpbile", {
+x:'-100vw',
+ease: "bounce",
+duration: 2.5,
+scrollTrigger: {
+  trigger: ".moveLeftMpbile",
+  toggleActions: "play none none reset"
+}
+});
+
+
+
+
+}
+
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+gsap.from(".moveRightMpbile", {
+
+x:'100vw',
+ease: "bounce",
+duration: 2.5,
+scrollTrigger: {
+  trigger: ".moveRightMpbile",
+  toggleActions: "play none none reset"
+}
+});
+
+}
+
+
+
+
+
+</script>
   
 
 </body>
