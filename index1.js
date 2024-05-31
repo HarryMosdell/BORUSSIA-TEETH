@@ -1,7 +1,8 @@
 
+gsap.registerPlugin(ScrollTrigger);
 
 
-gsap.registerPlugin(ScrollTrigger)
+
 
 gsap.from(".desktopIntroAppear", {
 
@@ -40,33 +41,35 @@ scrollTrigger: {
 
 
 if (window.matchMedia("(max-width: 800px)").matches) {
-gsap.from(".MobileCardLeftMove", {
-x:400,
+
+    
+gsap.from(".moveLeftMpbile", {
+x:'-100vw',
 ease: "bounce",
 duration: 2.5,
 scrollTrigger: {
-  trigger: ".MobileCardLeftMove",
+  trigger: ".moveLeftMpbile",
   toggleActions: "play none none reset"
 }
 });
+
+
+
 
 }
 
 
 if (window.matchMedia("(max-width: 800px)").matches) {
-gsap.from(".MobileCardRightMove", {
+gsap.from(".moveRightMpbile", {
 
-x:-400,
+x:'100vw',
 ease: "bounce",
 duration: 2.5,
+    delay:2,
 scrollTrigger: {
-  trigger: ".MobileCardRightMove",
+  trigger: ".moveRightMpbile",
   toggleActions: "play none none reset"
 }
 });
 
 }
-
-
-
-
